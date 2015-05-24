@@ -14,6 +14,8 @@
 		44D191B41A81C2620071182A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D191B31A81C2620071182A /* Images.xcassets */; };
 		44D191B71A81C2620071182A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D191B51A81C2620071182A /* LaunchScreen.xib */; };
 		44D191C31A81C2620071182A /* ZSDChartViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D191C21A81C2620071182A /* ZSDChartViewTests.m */; };
+		44D191CF1A81C2ED0071182A /* ZSDChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D191CE1A81C2ED0071182A /* ZSDChartView.m */; };
+		44D191D21A81C3E50071182A /* Lines.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D191D11A81C3E50071182A /* Lines.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		44D191BC1A81C2620071182A /* ZSDChartViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZSDChartViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D191C11A81C2620071182A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44D191C21A81C2620071182A /* ZSDChartViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSDChartViewTests.m; sourceTree = "<group>"; };
+		44D191CD1A81C2ED0071182A /* ZSDChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSDChartView.h; sourceTree = "<group>"; };
+		44D191CE1A81C2ED0071182A /* ZSDChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSDChartView.m; sourceTree = "<group>"; };
+		44D191D01A81C3E50071182A /* Lines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lines.h; sourceTree = "<group>"; };
+		44D191D11A81C3E50071182A /* Lines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lines.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		44D191A51A81C2620071182A /* ZSDChartView */ = {
 			isa = PBXGroup;
 			children = (
+				44D191CC1A81C2D60071182A /* ZSDChartView */,
 				44D191AA1A81C2620071182A /* AppDelegate.h */,
 				44D191AB1A81C2620071182A /* AppDelegate.m */,
 				44D191AD1A81C2620071182A /* ViewController.h */,
@@ -117,6 +124,17 @@
 				44D191C11A81C2620071182A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44D191CC1A81C2D60071182A /* ZSDChartView */ = {
+			isa = PBXGroup;
+			children = (
+				44D191CD1A81C2ED0071182A /* ZSDChartView.h */,
+				44D191CE1A81C2ED0071182A /* ZSDChartView.m */,
+				44D191D01A81C3E50071182A /* Lines.h */,
+				44D191D11A81C3E50071182A /* Lines.m */,
+			);
+			path = ZSDChartView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +239,9 @@
 			files = (
 				44D191AF1A81C2620071182A /* ViewController.m in Sources */,
 				44D191AC1A81C2620071182A /* AppDelegate.m in Sources */,
+				44D191D21A81C3E50071182A /* Lines.m in Sources */,
 				44D191A91A81C2620071182A /* main.m in Sources */,
+				44D191CF1A81C2ED0071182A /* ZSDChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +300,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -321,6 +342,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -343,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ZSDChartView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ZSDChartView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +436,7 @@
 				44D191C81A81C2620071182A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44D191C91A81C2620071182A /* Build configuration list for PBXNativeTarget "ZSDChartViewTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +445,7 @@
 				44D191CB1A81C2620071182A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
